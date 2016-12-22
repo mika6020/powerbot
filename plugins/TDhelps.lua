@@ -1,5 +1,5 @@
 local function run(msg, matches)
-local permagbot = [[
+local cmbot1 = [[
 ➖➖➖➖➖➖➖
 ✔️لیست دستورات مدیریتی
 ➖➖➖➖➖➖➖
@@ -83,7 +83,7 @@ unfilter فحش
 ❌ توجه کنید هیچ دستوری با ریپلی کار نمیکنداز یوزرنیم یا ایدی شخص استفاده کنید
 
 ]]
-local permagbot2 = [[
+local cmbot2 = [[
 ➖➖➖➖➖➖➖
 ✔️لیست دستورات قفلی:
 ➖➖➖➖➖➖➖
@@ -199,7 +199,7 @@ local permagbot2 = [[
 🔒#mutelist :
 
 ]]
-local permagbot3 = [[
+local cmbot3 = [[
 ➖➖➖➖➖➖➖
 ✔️لیست دستورات فان:
 ➖➖➖➖➖➖➖
@@ -251,7 +251,7 @@ local permagbot3 = [[
 ➰بجای کلمه یا متن موارد دلخواه خود را بنویسید.
 ]]
 
-local permagbot7 = [[
+local cmbot4 = [[
 
 ✔️برای دیدن دستورات مورد نظر خود مورد دلخواه را ارسال کنید :
 
@@ -276,7 +276,7 @@ ________________
 ...
 ]]
 
-local permagbot8 = [[
+local cmbot5 = [[
 
 💬راهنمای نصب و حذف پلاگین ها
 
@@ -314,15 +314,15 @@ mesal : pattern azan
 ...
 ]]
     if matches[1] == 'مدیریت' and is_momod(msg) then
-        return permagbot
+        return cmbot1
   elseif matches[1] == 'قفل' and is_momod(msg) then
-		return permagbot2
+		return cmbot2
   elseif matches[1] == 'فان' and is_momod(msg) then
-		return permagbot3
+		return cmbot3
   elseif matches[1] == 'help' and is_momod(msg) or matches[1] == 'راهنما' and is_momod(msg) then
-		return permagbot7
+		return cmbot4
   elseif matches[1] == 'پلاگین' and is_momod(msg) then
-		return permagbot8
+		return cmbot5
   end
 end
 
