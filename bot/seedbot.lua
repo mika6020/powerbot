@@ -260,6 +260,9 @@ function create_config( )
 	"me",
         "reporter",
         "id",
+			"bot",
+			"LinkPv",
+			"Addsudo",
 	"expire"
     },
     sudo_users = {299453239,182255045,0,tonumber(our_id)},--Sudo users
